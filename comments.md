@@ -46,7 +46,7 @@ service cloud.firestore {
     	allow read: if request.auth != null;
     }
     
-    match /chats/{document=**} {
+    match /chat/{document=**} {
       allow read, create: if request.auth != null;
     }
   }
