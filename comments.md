@@ -29,6 +29,6 @@ flutter packages get  (----> in terminal) (if needed, normally flutter will get 
 ! A Future in Flutter is the equivalent of a Promise in JavaScript !
 
 flutter clean
-flutter build ios
-
-flutter_config: ^1.0.7
+flutter pub cache repair
+flutter pub get
+flutter run
