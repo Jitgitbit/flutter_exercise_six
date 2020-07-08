@@ -5,7 +5,7 @@ class ChatScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: StreamBuilder(
+      body: StreamBuilder(                                                 //---> yes, streaming !!!
         stream: Firestore.instance
             .collection('chats/Pzk3onZgeUOmnzOcOM3U/messages')
             .snapshots(),
