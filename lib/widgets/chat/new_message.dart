@@ -17,6 +17,9 @@ class _NewMessageState extends State<NewMessage> {
       'createdAt': Timestamp.now(),
     });
     _controller.clear();
+    setState(() {
+      _enteredMessage = '';
+    });
   }
 
   @override
