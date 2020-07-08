@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "460359933760",
+    "firebase_url": "https://phoenixflutterchat.firebaseio.com",
+    "project_id": "phoenixflutterchat",
+    "storage_bucket": "phoenixflutterchat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460359933760:android:662f747a816402087664a5",
+        "android_client_info": {
+          "package_name": "com.example.flutter_exercise_six"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460359933760-3ibgc0bvd3ntab9fvunu46p82bo12f34.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9TippUs6kUxcHWI9I3eOtbhK-jal7t0I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460359933760-3ibgc0bvd3ntab9fvunu46p82bo12f34.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
