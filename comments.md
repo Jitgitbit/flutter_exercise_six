@@ -34,6 +34,7 @@ flutter pub get
 flutter run
 ===================================================
 FIREBASE RULES:
+----------
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
@@ -48,6 +49,15 @@ service cloud.firestore {
     
     match /chat/{document=**} {
       allow read, create: if request.auth != null;
+    }
+  }
+}
+---------
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if request.auth != null;
     }
   }
 }

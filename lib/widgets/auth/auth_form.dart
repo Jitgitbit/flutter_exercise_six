@@ -15,6 +15,7 @@ class AuthForm extends StatefulWidget {
     String email,
     String password,
     String userName,
+    File image,
     bool isLogin,
     BuildContext ctx,
   ) submitFn;
@@ -52,11 +53,12 @@ class _AuthFormState extends State<AuthForm> {
     if (isValid) {
       _formKey.currentState.save();
       widget.submitFn(
-        _userEmail.trim(), 
-        _userPassword.trim(), 
-        _userName.trim(),                               //---> This removes the white-space problem !!!
-        _isLogin, 
-        context
+        _userEmail.trim(),
+        _userPassword.trim(),
+        _userName.trim(),                       //---> This removes the white-space problem !!!
+        _userImageFile,
+        _isLogin,
+        context,
       );
     }
   }
