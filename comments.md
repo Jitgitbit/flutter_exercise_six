@@ -61,4 +61,7 @@ service firebase.storage {
     }
   }
 }
+---------
+Firebase Cloud Messaging:
+Notification is delivered to system tray. When the user clicks on it to open app onResume fires if click_action: FLUTTER_NOTIFICATION_CLICK is set.
 ============================================
