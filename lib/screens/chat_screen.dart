@@ -18,10 +18,10 @@ class _ChatScreenState extends State<ChatScreen> {
     fbm.configure(onMessage: (msg) {
       print(msg);
       return;
-    }, onLaunch: (msg) {
+    }, onLaunch: (msg) {                          //---> when app killed
       print(msg);
       return;
-    }, onResume: (msg) {
+    }, onResume: (msg) {                         //---> when app running in background
       print(msg);
       return;
     });
