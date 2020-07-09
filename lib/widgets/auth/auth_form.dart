@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../pickers/user_image_picker.dart';
+
 class AuthForm extends StatefulWidget {
   AuthForm(
     this.submitFn,
@@ -35,7 +37,7 @@ class _AuthFormState extends State<AuthForm> {
       widget.submitFn(
         _userEmail.trim(), 
         _userPassword.trim(), 
-        _userName.trim(),               //---> This removes the white-space problem !!!
+        _userName.trim(),                               //---> This removes the white-space problem !!!
         _isLogin, 
         context
       );
@@ -55,6 +57,7 @@ class _AuthFormState extends State<AuthForm> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
+                  UserImagePicker(),
                   TextFormField(
                     key: ValueKey('email'),
                     validator: (value) {
