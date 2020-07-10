@@ -65,3 +65,12 @@ service firebase.storage {
 Firebase Cloud Messaging:
 Notification is delivered to system tray. When the user clicks on it to open app onResume fires if click_action: FLUTTER_NOTIFICATION_CLICK is set.
 ============================================
+
+CLI:
+npm install -g firebase-tools
+firebase init
+-Functions (only this one)
+-use existing project
+-Javascript
+-ESLint yes
+-install dependencies with npm now yes
