@@ -13,6 +13,7 @@ class ChatScreen extends StatefulWidget {
 class _ChatScreenState extends State<ChatScreen> {
   @override
   void initState() {
+    super.initState();
     final fbm = FirebaseMessaging();
     fbm.requestNotificationPermissions();                 //---> only relevant for iOS !!!
     fbm.configure(onMessage: (msg) {
@@ -27,7 +28,6 @@ class _ChatScreenState extends State<ChatScreen> {
     });
     // fbm.getToken();      //---> good for notifications between only 2 people, A and B !!!  
     fbm.subscribeToTopic('chat');
-    super.initState();
   }
 
   @override
@@ -37,6 +37,7 @@ class _ChatScreenState extends State<ChatScreen> {
         title: Text('PhoenixFlutterChat'),
         actions: [
           DropdownButton(
+            underline: Container(),          //--> got rid of the thin grey line
             icon: Icon(
               Icons.more_vert,
               color: Theme.of(context).primaryIconTheme.color,
