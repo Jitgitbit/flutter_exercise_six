@@ -25,6 +25,8 @@ class _ChatScreenState extends State<ChatScreen> {
       print(msg);
       return;
     });
+    // fbm.getToken();      //---> good for notifications between only 2 people, A and B !!!  
+    fbm.subscribeToTopic('chat');
     super.initState();
   }
 
