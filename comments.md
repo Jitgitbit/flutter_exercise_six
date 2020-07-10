@@ -68,9 +68,11 @@ Notification is delivered to system tray. When the user clicks on it to open app
 
 CLI:
 npm install -g firebase-tools
+firebase login
 firebase init
 -Functions (only this one)
 -use existing project
 -Javascript
 -ESLint yes
 -install dependencies with npm now yes
+firebase deploy
