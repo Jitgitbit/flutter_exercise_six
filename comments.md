@@ -76,3 +76,6 @@ firebase init
 -ESLint yes
 -install dependencies with npm now yes
 firebase deploy
+
+BIG PROBLEM: ==========> new creation command needed for being able to publish with java file !!! =======> (flutter create -i objc -a java myapp)
+so this was a good build exercise, but is not usable for publication !!!
